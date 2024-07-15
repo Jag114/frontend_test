@@ -1,0 +1,41 @@
+.header-component {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    padding: 20px;
+    color: #ffffff;
+
+    &-image {
+        margin-right: 75%;
+        background-color: grey;
+        border-radius: 50%;
+        width: 5vw;
+        height: 5vw;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 75%; 
+            height: auto;
+            display: block;
+        }
+    }
+
+    &-image:hover{
+        background-color: orange;
+    }
+
+    &-title{
+        display: inline;
+        text-align: right;
+
+        p {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+    }
+   
+}
