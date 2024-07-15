@@ -1,0 +1,81 @@
+.footer-component {
+  width: 100%;
+  height: 12vh;
+  background-color: #15161a;
+  position: absolute;
+  bottom: 0;
+  color: #23252d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &-css {
+    width: 8vh;
+    height: 8vh;
+    border: 1px solid #23252d;
+    margin-left: 4vh;
+    margin-top: 1vh;
+    padding-top: 1vh;
+    padding-left: 1vh;
+    line-height: 1.2;
+
+    &:hover {
+      color: lightgray;
+      border-color: orange;
+    }
+  }
+
+  &-info {
+    display: flex;
+    margin-right: 10vh;
+    border: 1px solid #23252d; 
+    width: 20vh;
+    height: 3vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem;
+    color: #5e6066;
+    font-weight: bold;
+  }
+
+  span{
+    display: inline-block;
+  }
+
+  #hat{
+    font-size: 1.5rem;
+    margin-left: 1vh;
+    margin-top: .8vh;
+  }
+
+  p {
+    position: relative;
+    margin-left: 2vh;
+    font-weight: bold;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -1.5rem;
+      right: 3.6rem;
+      bottom: 0.5rem;
+      height: 0.05rem;
+      background: #23252d;
+      margin-left: -5px;
+      margin-right: -5px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 3.6rem;
+      right: -1.5rem;
+      bottom: 0.5rem;
+      height: 0.05rem;
+      background: #23252d;
+      margin-left: -5px;
+      margin-right: -5px;
+    }
+  }
+}
