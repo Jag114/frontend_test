@@ -1,9 +1,13 @@
 <footer class="footer-component">
-    <div class="footer-component-css">
+    <div class="footer-component-css" (click)="spin()" [ngClass]="{'spin-animation': isSpinning}">
         CSS<br> IS<br> AWESOME<br>
     </div>
-    <p> nabhat </p>
-    <div class="footer-component-info">
+    <p class="footer-component-company"> nabhat </p>
+    <div class="footer-component-info" (click)="changeVisibility()">
         <span>POKAŻ</span> <span id="hat" class="wide-caret">^</span>
+    </div>
+    <div *ngIf="show" class="footer-component-menu">
+        <p>> ZRESETUJ USTAWIENIA</p>
+        <p (click)="showName()">> POKAŻ DANE OSOBOWE</p>
     </div>
 </footer>
